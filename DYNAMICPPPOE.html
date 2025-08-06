@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DYNAMIC PPPOE</title>
+</head>
+<body>
+     
+
+    <h3>Hai Bertemu lagi dengan saya</h3>
+    <p>kita mulai saja ya untuk tutorial setting pppoe nya</p>
+    <p>untuk setting pppoe kita bisa menggunakan 2 cara yaitu cara manual dan pakai cli/ssh </p>
+    <p>kita mulai dari cara yang manual terlebih dahulu</p>
+    <h3>setting pppoe manual</h3>
+    <ol type="1">
+    <li>
+        login MIKROTIK terlebih dahulu,lalu konfigurasi MIKROTIK agar mendapat internet
+    </li>
+    <li>Kalau sudah buka menu PPP yang ada di MIKROTIK</li>
+    <p>dengan posisi komputer telah tersambung ke internet </p>
+    <img src="image 1.png">
+    <li>masuk ke menu pppoe server</li>
+    <img src="image 2.png">
+    <li>tambah pppoe server yang baru dengan menklik tombol +</li>
+    <img src="image 3.png">
+    <li>tambahkan service ke ether 4</li>
+    <p>Berhubung saya mau menggunakan ether 4 jadi saya pilih  ether 4 ,ini terserah kalian mau ditaruh ether berapa</p>
+    <img src="image 4.png">
+    <p>Jika sudah tekan tombol Apply dan OK</p>
+    <li>untuk step petama selesai</li>
+    <p>Jika sudah semua tampilan dari konfigurasi tadi akan seperti ini</p>
+    <img src="image 5.png">
+    <p>next kita lanjut ke step berikutnya</p>
+    <h4>SETTING USERNAME DAN PASSWORD</h4>
+    <li>Masuk ke menu SECRETS</li>
+    <img src="image 6.png">
+    <p>lalu tekan tombol + yang warna biru</p>
+    <li>Add USERNAME dan PASSWORD</li>
+    <p>kita harus tambahkan USERNAME dan PASSWORD yang akan kita gunakan,pastikan USERNAME dan PASSWORD yang di buat itu aman dan susah untuk di tebak
+    </p>
+    <img src="image 7.png">
+    <li>ADD Local dan Remote address</li>
+    <p>supaya apa? supaya clinet bisa menggunakan internet dengan PPPOE kita,jadi kita harus tambahkan local dan remot address </p>
+    <img src="image 8.png">
+    <p>Local Address adalah IP address yang akan ditempelkan ke interface yang ada di PPPoE server.</p>
+    <p>Remote Address adalah IP address yang akan ditempelkan ke interface yang ada di PPPoE client.</p>
+    <p>Setelah itu click tombol Apply, kemudian OK</p>
+
+
+    </ol>
+</body>
+</html>
